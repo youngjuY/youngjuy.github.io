@@ -20,9 +20,12 @@
               <p style="text-align:center">
                 <name>Youngju Yoo</name>
               </p>
-              <p> Hi! My name is Youngju Yoo. I am an undergraduate student at KAIST.  working at <a href="https://existentialrobotics.org/">Existential Robotics Laboratory</a> under the guidance of Prof. <a href="https://natanaso.github.io/">Nikolay Atanasov</a>.
-	      </p>
-	       <p> Previously, I was a research officer at the <a href="https://www.add.re.kr/eps">Agency for Defense Development (ADD)</a>, the South Korean counterpart to the U.S. DARPA. I received my B.S. in Electrical Engineering and Mathematics (double major) at <a href="https://www.kaist.ac.kr/en/">KAIST</a>.
+              <p>
+              I am an undergraduate student in <strong>Electrical Engineering at KAIST.</strong>
+              I work in <strong>CILab</strong>, advised by <strong>Prof. Changick Kim</strong>.
+              I am also a <strong>visiting undergraduate researcher</strong> in the
+              <strong>Learning Agents Research Group (LARG) at UT Austin</strong>, advised by
+              <strong>Prof. Peter Stone</strong>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:suk063@ucsd.edu">Email</a> &nbsp/&nbsp
@@ -41,6 +44,7 @@
           </tr>
         </tbody></table>
 <!-- ========== News(20%) + Research(80%) ========== -->
+<!-- ========== News(20%) + Research(80%) — clean styled ========== -->
 <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;table-layout:fixed;">
   <colgroup>
     <col style="width:20%">
@@ -48,24 +52,43 @@
   </colgroup>
   <tbody>
     <tr>
-      <!-- 좌측: News 1/5 -->
-      <td style="padding:20px;vertical-align:top;">
-        <heading>News!</heading>
-        <ul style="list-style:none;padding-left:0;margin-top:12px;margin-bottom:0;line-height:1.4;">
-          <li style="margin:8px 0;"><span style="font-weight:600;color:#6b6b6b;">2025-09</span> — Attended <strong>ICRA</strong> (poster).</li>
-          <li style="margin:8px 0;"><span style="font-weight:600;color:#6b6b6b;">2025-08</span> — <strong>RoboSSM</strong> workshop paper accepted.</li>
-          <li style="margin:8px 0;"><span style="font-weight:600;color:#6b6b6b;">2025-07</span> — Visiting UG researcher at <strong>UT Austin LARG</strong>.</li>
-        </ul>
+      <!-- 좌측: News (sidebar) -->
+      <td class="news-col" style="padding:16px;vertical-align:top;">
+        <div class="news-card">
+          <div class="news-title">🗞️ News</div>
+          <ul class="news-list">
+            <!-- 원하는 만큼 복사/수정 -->
+            <li class="news-item">
+              <span class="news-date">2025-09-23</span>
+              Personal website launched on GitHub Pages 🎉
+            </li>
+            <li class="news-item">
+              <span class="news-date">2025-09-20</span>
+              RoboSSM workshop video finalized & submitted
+            </li>
+            <li class="news-item">
+              <span class="news-date">2025-08-31</span>
+              CoRL WS submission: RoboSSM (accepted)
+            </li>
+          </ul>
+          <details class="news-more">
+            <summary>Show more</summary>
+            <ul class="news-list">
+              <li class="news-item"><span class="news-date">2025-07-15</span> Visiting UG researcher @ UT Austin LARG</li>
+              <li class="news-item"><span class="news-date">2025-06-10</span> Talk at KAIST CILab seminar</li>
+            </ul>
+          </details>
+        </div>
       </td>
 
-      <!-- 우측: Research 4/5 -->
-      <td style="padding:20px;vertical-align:middle;">
+      <!-- 우측: Research 본문 -->
+      <td class="research-col" style="padding:20px;vertical-align:top;">
         <heading>Research</heading>
         <p>
           My research goal is to enable mobile robots to perform long-horizon tasks in large-scale environments.
           Currently, I am focusing on building neural representations for robot policy learning. I am interested in the following topics:
         </p>
-        <ul>
+        <ul class="pretty-list">
           <li>Implicit neural representations</li>
           <li>Latent feature mapping</li>
           <li>Neural SLAM</li>
@@ -73,7 +96,9 @@
         </ul>
       </td>
     </tr>
-  </tbody> </table>
+  </tbody>
+</table>
+
  
 	      
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
