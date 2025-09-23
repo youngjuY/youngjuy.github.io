@@ -1,137 +1,71 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Youngju Yoo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Youngju Yoo — Personal website" />
-  <style>
-    /* ====== Minimal, clean styles ====== */
-    :root {
-      --fg: #111;
-      --muted: #666;
-      --link: #0a66c2;
-      --bg: #fff;
-      --card: #fafafa;
-      --border: #eaeaea;
-      --maxw: 860px;
-    }
-    html, body { background: var(--bg); color: var(--fg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-    .wrap { max-width: var(--maxw); margin: 48px auto; padding: 0 16px; }
-    header { display: flex; align-items: center; gap: 20px; margin-bottom: 24px; }
-    header img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); background: #fff; }
-    h1 { font-size: 28px; margin: 0; }
-    .muted { color: var(--muted); }
-    nav { margin: 16px 0 28px; }
-    nav a { margin-right: 14px; text-decoration: none; color: var(--link); }
-    section { margin: 36px 0; }
-    h2 { font-size: 22px; margin: 0 0 12px; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
-    .list { display: grid; gap: 12px; }
-    .item { border: 1px solid var(--border); border-radius: 12px; padding: 14px; background: #fff; }
-    .item h3 { font-size: 18px; margin: 0 0 6px; }
-    .meta { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
-    .links a { margin-right: 10px; color: var(--link); text-decoration: none; font-size: 14px; }
-    footer { margin: 48px 0 12px; font-size: 14px; color: var(--muted); }
-    /* Responsive */
-    @media (max-width: 520px){ header { flex-direction: column; align-items: flex-start; } }
-  </style>
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Sunghwan Kim</title>
+  
+  <meta name="author" content="Sunghwan Kim">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/ucsd-logo-large.png">
 </head>
+
 <body>
-  <div class="wrap">
-
-    <!-- ====== Header / Profile (수정 필요 없음) ====== -->
-    <header>
-      <img src="images/portrait.jpg" alt="Portrait" />
-      <div>
-        <h1>Youngju Yoo</h1>
-        <div class="muted">Robotics & Machine Learning</div>
-        <div class="muted">Email: <a href="mailto:you@example.com">you@example.com</a></div>
-      </div>
-    </header>
-
-    <!-- ====== Nav (수정 필요 거의 없음) ====== -->
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- ====== About (기본 소개, 원하면 한두 줄만 바꿔도 됨) ====== -->
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        I am an undergraduate researcher interested in robot learning and scalable evaluation.
-        This site highlights a subset of my research projects and publications.
-      </p>
-    </section>
-
-    <!-- ====== Research (🔧 여기를 너 내용으로만 고치면 됨) ====== -->
-    <section id="research">
-      <h2>Research</h2>
-      <div class="list">
-
-        <!-- 🔧 RESEARCH: 여기부터 너 내용으로 채우면 됨 -->
-        <!-- 아래 item 블록을 복사/붙여넣기 해서 원하는 만큼 추가하세요. -->
-        <article class="item">
-          <h3>RoboSSM: Scalable In-context Imitation Learning via State-Space Models</h3>
-          <div class="meta">UT Austin LARG · 2025</div>
-          <p>
-            We propose a state-space model based framework that scales in-context imitation learning to long prompts while maintaining linear-time inference.
-          </p>
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener">Paper</a>
-            <a href="#" target="_blank" rel="noopener">Code</a>
-            <a href="#" target="_blank" rel="noopener">Video</a>
-            <a href="#" target="_blank" rel="noopener">Poster</a>
-          </div>
-        </article>
-
-        <article class="item">
-          <h3>BEEP3D: Box-Supervised 3D Instance Segmentation with Efficient Pseudo-Masks</h3>
-          <div class="meta">KAIST CILab · 2024</div>
-          <p>
-            A weakly-supervised 3DIS method that matches the efficiency of box-only training while approaching fully-supervised performance.
-          </p>
-          <div class="links">
-            <a href="#" target="_blank" rel="noopener">Paper</a>
-            <a href="#" target="_blank" rel="noopener">Code</a>
-          </div>
-        </article>
-
-        <!-- 🔧 필요하면 더 추가 -->
-        <!-- 🔧 RESEARCH: 여기까지 편집 -->
-      </div>
-    </section>
-
-    <!-- ====== Publications (수정 안 해도 되는 기본 자리) ====== -->
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <p class="muted">A short, curated list. (Full list in my CV / Google Scholar.)</p>
-      <ul>
-        <li><strong>RoboSSM</strong>, 2025 — arXiv (under review)</li>
-        <li><strong>BEEP3D</strong>, 2024 — arXiv</li>
-      </ul>
-    </section>
-
-    <!-- ====== Contact (수정 거의 불필요) ====== -->
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:you@example.com">you@example.com</a><br/>
-        GitHub: <a href="https://github.com/youngjuy" target="_blank" rel="noopener">github.com/youngjuy</a>
-      </p>
-    </section>
-
-    <footer>
-      © <span id="y"></span> Youngju Yoo
-    </footer>
-  </div>
-
-  <script>
-    // 연도 자동 갱신 (손댈 필요 없음)
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Sunghwan Kim (김성환)</name>
+              </p>
+              <p> Hi! My name is Sunghwan Kim, pronounced “Sung-Hwahn” (su as in “sun”). I am a PhD student at UC San Diego, working at <a href="https://existentialrobotics.org/">Existential Robotics Laboratory</a> under the guidance of Prof. <a href="https://natanaso.github.io/">Nikolay Atanasov</a>.
+	      </p>
+	       <p> Previously, I was a research officer at the <a href="https://www.add.re.kr/eps">Agency for Defense Development (ADD)</a>, the South Korean counterpart to the U.S. DARPA. I received my B.S. in Electrical Engineering and Mathematics (double major) at <a href="https://www.kaist.ac.kr/en/">KAIST</a>.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:suk063@ucsd.edu">Email</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/ssshwan/">Linkedin</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=rhOJlOUAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/ssssshwan/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/Sunghwan.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Sunghwan_circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+	          My research goal is to enable mobile robots to perform long-horizon tasks in large-scale environments. Currently, I am focusing on building neural representations for robot policy learning. I am interested in the following topics:
+	        </p>
+	        <ul>
+	          <li>Implicit neural representations</li>
+	          <li>Latent feature mapping</li>
+	          <li>Neural SLAM</li>
+	          <li>Mobile manipulation</li>
+	        </ul>
+            </td>
+          </tr>
+        </tbody></table>    
+	      
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+                             <td style="text-align:right;font-size:small;">
+                 <img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=-ZDMjdvfBBRNBpABEuDJexVuVQtQV-PD13WaCGM7d7I" />
+                 <br /> 
+                 Template borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+               </td>
+          </tr>
+        </tbody></table>
+	      
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
