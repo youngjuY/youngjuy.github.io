@@ -204,6 +204,11 @@
     margin: 6px 0;
   }
   
+  /* spacing between research entries */
+  .research-item {
+    margin: 24px 0;
+  }
+  
   /* ===== Responsive: 모바일에서는 위아래로 쌓기 ===== */
   @media (max-width: 760px){
     table[style*="table-layout:fixed;"] colgroup col { width: 100% !important; }
