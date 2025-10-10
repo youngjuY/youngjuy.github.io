@@ -117,35 +117,35 @@
                     </tr>   
               
                     <script>
-                      (function () {
-                        // (1) 여기에 HitsCounter 생성기에서 받은 "이미지 URL"을 붙여넣으세요
-                        var BADGE_URL = '<<여기에 IMG URL>>';
-                      
-                        // (2) 기본은 "카운트만" (안 보이게)
-                        var img = document.createElement('img');
-                        img.src = BADGE_URL;
-                        img.alt = '';
-                        img.style.cssText = 'width:0;height:0;border:0;visibility:hidden;position:absolute';
-                      
-                        // (3) ?pv=1 혹은 #pv=1 있을 때만 화면에 표시
-                        var TRIGGERS = ['pv','view','secret']; // 원하는 키워드로 바꿔도 됨
-                        function hasTrigger() {
-                          var qs = new URLSearchParams(location.search);
-                          var hs = new URLSearchParams((location.hash || '').replace(/^#/, ''));
-                          return [...qs.keys(), ...hs.keys()].some(k => TRIGGERS.includes(k));
-                        }
-                        if (hasTrigger()) {
-                          img.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999';
-                          img.width = 120;
-                          img.height = 30;
-                          img.title = 'Pageviews (this page)';
-                        }
-                      
-                        document.addEventListener('DOMContentLoaded', function () {
-                          document.body.appendChild(img);
-                        });
-                      })();
-                      </script>
+      (function () {
+        // (1) 여기에 HitsCounter 생성기에서 받은 "이미지 URL"을 붙여넣으세요
+        var BADGE_URL = 'https://hitscounter.dev/api/hit?url=https%3A%2F%2Fyoungjuy.github.io%2F&label=yj&icon=bookmark-check&color=%23212529&message=&style=flat&tz=UTC';
+      
+        // (2) 기본은 "카운트만" (안 보이게)
+        var img = document.createElement('img');
+        img.src = BADGE_URL;
+        img.alt = '';
+        img.style.cssText = 'width:0;height:0;border:0;visibility:hidden;position:absolute';
+      
+        // (3) ?pv=1 혹은 #pv=1 있을 때만 화면에 표시
+        var TRIGGERS = ['pv','view','secret']; // 원하는 키워드로 바꿔도 됨
+        function hasTrigger() {
+          var qs = new URLSearchParams(location.search);
+          var hs = new URLSearchParams((location.hash || '').replace(/^#/, ''));
+          return [...qs.keys(), ...hs.keys()].some(k => TRIGGERS.includes(k));
+        }
+        if (hasTrigger()) {
+          img.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999';
+          img.width = 120;
+          img.height = 30;
+          img.title = 'Pageviews (this page)';
+        }
+      
+        document.addEventListener('DOMContentLoaded', function () {
+          document.body.appendChild(img);
+        });
+      })();
+      </script>
 
 </body>
 
