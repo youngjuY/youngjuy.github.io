@@ -128,7 +128,7 @@
         img.style.cssText = 'width:0;height:0;border:0;visibility:hidden;position:absolute';
       
         // (3) ?pv=1 혹은 #pv=1 있을 때만 화면에 표시
-        var TRIGGERS = ['pv','view','secret']; // 원하는 키워드로 바꿔도 됨
+        var TRIGGERS = ['yj']; // 원하는 키워드로 바꿔도 됨
         function hasTrigger() {
           var qs = new URLSearchParams(location.search);
           var hs = new URLSearchParams((location.hash || '').replace(/^#/, ''));
