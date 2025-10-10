@@ -10,32 +10,6 @@
 	<link rel="icon" type="image/png" href="images/kaist.gif">
 </head>
 
-<script>
-  (function () {
-    // 1) 현재 페이지 URL을 자동으로 인코딩해서 페이지별로 카운트
-    var encoded = encodeURIComponent(location.href);
-  
-    // 2) hits.seeyoufarm 카운터 이미지 준비 (로드되면 카운트가 1 증가)
-    var img = document.createElement('img');
-    img.src = 'https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=' + encoded + '&title=visits';
-    img.alt = '';
-  
-    // 3) 기본은 완전 숨김 (카운트만 되고 누구에게도 안 보임)
-    img.style.cssText = 'width:0;height:0;border:0;visibility:hidden;position:absolute';
-  
-    // 4) URL에 ?pv=1 이 있으면 배지를 화면에 표시 (오른쪽 아래)
-    if (new URLSearchParams(location.search).has('pv')) {
-      img.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999';
-      img.width = 120; // 보기 좋은 크기
-      img.height = 30;
-      img.title = 'Pageviews (this page)';
-    }
-  
-    document.addEventListener('DOMContentLoaded', function () {
-      document.body.appendChild(img);
-    });
-  })();
-  </script>
 
 
 <body>
