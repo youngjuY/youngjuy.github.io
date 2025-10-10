@@ -10,7 +10,39 @@
 	<link rel="icon" type="image/png" href="images/kaist.gif">
 </head>
 
+<script>
+  (function () {
+    // 1) 현재 페이지 URL을 자동으로 인코딩해서 페이지별로 카운트
+    var encoded = encodeURIComponent(location.href);
+  
+    // 2) hits.seeyoufarm 카운터 이미지 준비 (로드되면 카운트가 1 증가)
+    var img = document.createElement('img');
+    img.src = 'https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=' + encoded + '&title=visits';
+    img.alt = '';
+  
+    // 3) 기본은 완전 숨김 (카운트만 되고 누구에게도 안 보임)
+    img.style.cssText = 'width:0;height:0;border:0;visibility:hidden;position:absolute';
+  
+    // 4) URL에 ?pv=1 이 있으면 배지를 화면에 표시 (오른쪽 아래)
+    if (new URLSearchParams(location.search).has('pv')) {
+      img.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999';
+      img.width = 120; // 보기 좋은 크기
+      img.height = 30;
+      img.title = 'Pageviews (this page)';
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      document.body.appendChild(img);
+    });
+  })();
+  </script>
+
+
 <body>
+  <a href="https://hits.seeyoufarm.com">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyoungjuy.github.io&title=visits" />
+  </a>
+  
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -59,7 +91,7 @@
           </tr>
         </tbody></table>
 
-        <table class="research-item" style="width:100%;border:0px;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="research-item" style="width:100%;border:0px;border-spacing:0 40px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
                       <td style="padding: 0px 20px 0px 20px; width:30%; vertical-align:middle; border: 0px;">
                         <img src="/images/tweet1_1.gif" alt="safs_small"  width="100%" height="100%" style="border-style: none">
@@ -70,7 +102,7 @@
                           <span class="papertitle">RoboSSM: Scalable In-context Imitation Learning via State-Space Models</span>
                         </strong>
                         <br>
-                      <u>Youngju Yoo</u>,	
+                     <u><strong>Youngju Yoo</strong></u>, Jiaheng Hu, Yifeng Zhu, Bo Liu, Qiang Liu, Roberto Martín-Martín, Peter Stone
                        <br>
                         <em>
               CoRL 2025 Workshop on Resource-Rational Robot Learning<br>
@@ -83,7 +115,7 @@
             
                 
           <tr>
-                      <td style="padding: 0px 40px 0px 40px; width:30%; vertical-align:middle; border: 0px;">
+                      <td style="padding: 0px 20px 0px 20px; width:30%; vertical-align:middle; border: 0px;">
                         <img src="/images/figure3_2.jpg" alt="safs_small"  width="100%" height="100%" style="border-style: none">
                       </td>
                       <td width="75%" valign="middle">
@@ -92,13 +124,30 @@
                           <span class="papertitle">BEEP3D: Box-Supervised End-to-End Pseudo-Mask Generation for 3D Instance Segmentation</span>
                         </strong>
                         <br>
-                <u>Youngju Yoo</u>*,	Seho Kim*, Changick Kim
+               <u><strong>Youngju Yoo</strong></u>*,	Seho Kim*, Changick Kim
                         <br>
                         <a href="https://openreview.net/pdf?id=HwdZWbgMsb">paper</a> 
                       </td>
                     </tr>   
 
-	    
+                <tr>
+                      <td style="padding: 0px 20px 0px 20px; width:30%; vertical-align:middle; border: 0px;">
+                        <img src="/images/ICD_gif.gif" alt="safs_small"  width="100%" height="100%" style="border-style: none">
+                      </td>
+                      <td width="75%" valign="middle">
+
+                        <strong>
+                          <span class="papertitle">How to leverage large language models for automatic ICD coding</span>
+                        </strong>
+                        <br>
+               <u><strong>Youngju Yoo</strong></u>,	Sewon Kim
+                        <br>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0010482525003221">paper</a> 
+                      </td>
+                    </tr>   
+              
+
+
 </body>
 
 </html>
