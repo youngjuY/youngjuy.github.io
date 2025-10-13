@@ -206,7 +206,12 @@
   
   /* spacing between research entries */
   .research-item {
-    margin: 24px 0;
+    margin: 20px 0;
+  }
+  
+  /* reduce gap between publications heading and first research item */
+  .publications-heading {
+    margin-bottom: 0;
   }
   
   /* ===== Responsive: 모바일에서는 위아래로 쌓기 ===== */
