@@ -226,8 +226,11 @@
   }
 
   /* spacing between research entries */
-  .research-item {
-    margin: 20px 0;
+  .research-item img { 
+    max-width: 100%;
+    height: auto;        /* ← 핵심: 세로 자동 */
+    display: block;
+    border: 0;
   }
   
   /* reduce gap between publications heading and first research item */
