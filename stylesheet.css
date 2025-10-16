@@ -93,6 +93,20 @@
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 22px;
   }
+
+  /* heading scale helpers for music page */
+  heading.heading-large {
+    font-size: 22px;
+    font-weight: 700;
+    display: block;
+    margin: 12px 0 10px 0; /* add bottom space below Cello */
+  }
+  heading.heading-medium {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin: 12px 0 6px 0; /* add top space before group headings */
+  }
   
   papertitle {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -203,7 +217,14 @@
   .pretty-list li {
     margin: 6px 0;
   }
-  
+ 
+  .pretty-list_ {
+    padding-left: 18px;
+  }
+  .pretty-list_ li {
+    margin: 3px 0;
+  }
+
   /* spacing between research entries */
   .research-item {
     margin: 20px 0;
@@ -220,4 +241,5 @@
     .news-col { border-right: 0; padding-bottom: 0; }
     .research-col { padding-top: 8px; }
   }
+
   
